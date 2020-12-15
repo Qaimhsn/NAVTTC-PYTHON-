@@ -1,0 +1,27 @@
+a="Hello"
+
+print((a+" world \n")*10)
+
+my_list=["oil","rice","tapal"]
+
+my_list1=["pulses","chickpeas",2,"wheat"]
+
+print(type(my_list))
+
+print(my_list)
+
+print(my_list1)
+
+print(len(my_list1+my_list))
+
+print((my_list1+my_list))
+
+print((my_list1+my_list)[1:4])
+
+if "oil" in my_list:
+    
+print("yes")
+
+my_list[2]="spices"    
+
+print(my_list)
