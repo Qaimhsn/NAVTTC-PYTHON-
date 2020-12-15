@@ -1,0 +1,39 @@
+a="hello>"
+
+print(a)
+
+print(a[::5])
+
+print(a[::2])
+
+print(a[1:2])
+
+print(a[1:5])
+
+print(a[-6:-1])
+
+print(a[-4:-1])
+
+print(a[-6:-1].upper())
+
+b="   qaim hasan    "
+
+c=24
+print(b)
+
+print(b.strip())
+
+print(b.replace("hasan","sheikh"))
+
+print(a[:5]+" "+b.strip()+" "+str(c))
+
+txt="you are year {} ? {}
+"
+stdy="Are you study in AI?"
+
+print(a[:5]+" "+b.strip()+" "+txt.format(c,stdy))
+
+s="we are studying in \"DUET\"\n"
+
+print(s)
+print(s+stdy.replace("are","qaim"))
