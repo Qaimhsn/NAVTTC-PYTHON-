@@ -1,0 +1,26 @@
+my_list1=["pulses","chickpeas","wheat"]
+
+for i in my_list1:
+
+    print(i.index(i),i)
+
+for m in range(len(my_list1)):
+    
+print(m)
+
+if "pulses" in my_list1:
+
+    print("true")
+
+new=[x for x in my_list1 if "wh" in x]
+
+print(new)
+print(my_list1)
+
+w=("king","queen","minister","advisor")
+
+print(w)
+
+if "queen" in w:
+
+    print("why Are you there !!!")
