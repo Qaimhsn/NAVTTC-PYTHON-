@@ -1,0 +1,96 @@
+def my_func():
+
+    print("Hello from function")
+
+my_func()
+
+def my_name(name):
+
+    print("My name is ",name)
+
+my_name("qaim")
+
+def my_name1(name ,fname):
+
+    print("My name is  ",name,"S/o",fname)
+
+my_name1("qaim","M suleman")
+
+def add(int1,int2):
+
+    print("Sum of INT1 And INT2 ",int1+int2)
+
+add(6,5)
+
+add(7,5)
+
+add(5,5)
+
+def arguments(*args):
+
+    print("IS this your information:\n",args)
+
+arguments("qaim hassan","s/o","m Suleman","age is",24)
+
+basket=["apple","pie","kiwi","strawberry"]
+
+def fruits(basket):
+
+    for x in basket:
+
+        print(x)
+
+fruits(basket)
+
+def fruits1(basket):
+
+    for x in basket:
+
+        print(x)
+        
+if x == "strawberry":
+
+            print("Basket Is Empty")
+fruits1(basket)
+
+def subtraction(val1,val2):
+
+    sub=val1-val2
+
+    add=val1+val2
+
+    return add , sub
+print
+(subtraction(5,2))
+
+int1=2
+
+int2=3
+
+def val_check(int1,int2):
+
+    print("First Number:",int1,"\nSecond Number:",int2)
+    
+if int1 > int2:
+
+        print("Your First Number is Greater Than Second  ",int1)
+    
+elif int2 > int1:
+
+        print("Your Second Number is Greater Than first  ",int2)
+
+val_check(int1,int2)
+
+inp=input("Enter Fruit Name :")
+
+def check(inp):
+    
+if inp == "orange":
+
+        print("You,re right!")
+    
+else:
+
+        print("You,re Wrong")
+
+check(inp)
