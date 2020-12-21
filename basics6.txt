@@ -1,0 +1,54 @@
+num=int(input("Enter Your Number : "))
+
+if num % 2 == 0:
+
+    print("your Number", num ," is even")
+
+else:
+
+    print("your Number", num ," is odd")
+
+x =int(input("Enter Your Number : "))
+
+if x > 10:
+
+    print("Greater Than !0")
+    
+if x != 2:
+
+      print("your value is 2")
+
+else:
+
+    print("Less than 10")
+i = 0
+
+while i <6 :
+
+    i+=1
+
+    if i == 6:
+
+        continue
+    print(i)
+i = 0
+
+while i <6 :
+
+    i+=1
+
+    print(i,"i is no longer less than 6")
+
+else:
+
+    print("i is no longer less than 6")
+
+fruit=["apple","mango","apricot","cherry"]
+
+for x in fruit:
+
+    print(x)
+    
+if x == "apricot":
+
+        print(x,"is here")
