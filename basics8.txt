@@ -1,0 +1,42 @@
+def check_num():
+
+    num=int(input("enter Your Number:"))
+    if num in range(10):
+
+        print("Yes Is It In.")
+
+    else:
+
+        print("No That is Out of range.")
+
+check_num() 
+def reverse_str():
+
+    string=input("Enter Your string:")
+
+    print((reversed(string)))
+
+    string="".join(reversed(string))
+
+    print(string)
+
+reverse_str()
+list=[1,2,3,4,5]
+def add():
+    d=0
+    for i in range(0,len(list)):
+        d=d+list[i]
+    print(d)    
+add()
+x=[2,3,4,5,6,7]
+def rev():
+    x.reverse()
+    print(x)
+rev() 
+def max_two(x,y):
+    if x>y:
+        return x
+    return y
+def max_three(x,y,z):
+    return max_two(x,max_two(x,y))
+print(max_three(3,6,5))  
