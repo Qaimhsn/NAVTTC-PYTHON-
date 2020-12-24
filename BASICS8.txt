@@ -1,0 +1,106 @@
+try:
+
+    print(x)
+
+except:
+
+    print("except function has printed")
+
+try:
+
+    print(x)
+
+except NameError:
+
+    print("There Is Name Error")
+
+except:
+
+    print("Something Went Wrong")
+
+try:
+
+    x=2
+
+    print(x*4)
+
+except NameError:
+
+    print("There Is Name Error")    
+
+except:
+
+    print("Something Went Wrong")
+
+else:
+
+    print("nothing went wrong")
+
+try:
+
+    x=2
+
+    print(x*4)
+
+except NameError:
+
+    print("Something Went Wrong")
+
+finally:
+
+    print("i don't know about any error.")
+    
+    
+def tableno():
+
+    inp=int(input("Enter Your Table No:"))
+
+    if inp < 0:
+
+        raise Exception("Enter Valid Integer Please.")
+
+    else:
+
+        for i in range(1,11):
+
+            print("\n",inp,"X",i,"=",inp*i)
+
+tableno() 
+def filehandling():
+
+    x=open("file-handling.txt")
+
+    print(x.read())
+
+filehandling()        
+
+def filehandling2():
+
+    x=open("h:\python test program\file-handling.txt",r)
+
+    print(x.read(8))
+
+filehandling2()
+def filehandling3():
+
+    x=open("h:\python test program\file-handling.txt",r)
+
+    print(x.readline(4))
+    print(x.readline())
+
+    x.close() 
+
+filehandling3()  
+def filehandling4():
+
+    x=open("h:\python test program\file-handling.txt","a")
+
+    x.write("This is IDLE shell")
+    x.close() 
+
+filehandling4()
+def filecreate():
+    x=open("myfile.txt","x");
+    x.write("this is my new file")
+    x.close()
+filecreate()
