@@ -1,0 +1,97 @@
+class myclass:
+
+    x=5
+
+p1=myclass()
+
+print(p1)
+
+print(p1.x)
+
+
+class myclass1:
+
+    def __init__(self ,name,age):
+
+        self.name=name
+
+        self.age=age
+
+info=myclass1("qaim",24)
+
+print(info.name,"\n",info.age)
+
+
+class myclass2:
+
+    def __init__(self ,name,age):
+
+        self.name=name
+
+        self.age=age
+
+    def print_info(self):
+
+        print("your name is :",self.name,"\n","you are ",self.age,"old")
+
+bio=myclass2("Maisum",24)
+
+bio.print_info()
+
+
+"""class myclass3:
+
+    def __init__(self ,name,age):
+
+        self.name=name
+
+        self.age=age
+
+    def input1(self):
+
+        self.age=int(input("Enter your Age:"))
+
+        self.name=input("Enter your name:")
+
+    def print_info2(self):
+
+        print("your name is :",self.name,"\n","you are ",self.age,"old")
+
+bio1=myclass3()
+
+bio1.input1()
+
+bio1.print_info2()
+"""
+
+class person:
+    
+def __init__(self,fname,lname):
+
+        self.fname=fname
+
+        self.lname=lname
+    
+def printname(self):
+
+        print(self.fname,self.lname)
+
+
+class firefighter(person):
+
+    pass
+
+f1=firefighter("qaim","hasan")
+f1.printname()
+       
+
+
+
+
+
+
+
+
+
+
+
