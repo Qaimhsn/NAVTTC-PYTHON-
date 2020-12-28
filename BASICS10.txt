@@ -1,0 +1,146 @@
+class player:
+
+    def __init__(self,name,age,mode):
+
+        self.name=name
+
+        self.age=age
+
+    def run(self):
+
+        print("I AM RUNNING!")
+
+p1=player("Qaim",24,"easy").run()
+
+print(p1)
+class calc:
+
+    def __init__(self,opr,val1,val2):
+
+        self.opr=opr
+
+        self.val1=val1
+
+        self.val2=val2
+
+    def function(self):
+
+        if opr == "+":
+
+            print(val1+val2)
+
+        elif opr == "-":
+
+            print(val1-val2)
+
+        elif opr == "*":
+
+            print(val1*val2)
+
+        else :
+
+            print(val1/val2)
+
+opr=input("Enter Your Operator : ")
+
+val1=int(input("Enter Your First Number:"))
+
+val2=int(input("Enter Your Second Number:"))
+
+t1=calc(opr,val1,val2)
+
+t1.function()
+class bird:
+
+    def __init__(self):
+
+        print("Bird is ready")
+
+    def whoisthis(self):
+
+        print("Bird")
+
+    def swim(self):
+
+        print("Swim Faster")
+
+class penguin(bird):
+
+    def __init__(self):
+
+        super().__init__()
+
+        print("Penguin are Here!")
+
+    def whoisthis(self):
+
+        print("penguin")
+
+    def fly(self):
+
+        print("Fly Fast")
+
+peggy=penguin()
+
+peggy.whoisthis()
+
+peggy.fly()
+class vehicle:
+
+    def __init__(self,type):
+
+        self.type=type
+
+    def typ(self):
+
+        print("Your Vehicle is : ",self.type)
+class bike(vehicle):
+
+    def __init__(self,no,chasisno,color,model):
+
+        super().__init__(self)
+
+        self.no=no
+
+        self.chasisno=chasisno
+
+        self.color=color
+
+        self.model=model
+
+    def printinfo(self):
+
+        print(self.no,"\n",self.chasisno,"\n",self.color,"\n",self.model)
+
+v1=vehicle("Bike")
+
+v1.typ()
+
+b1=bike(223,102536,"Blue","KM-6935")
+
+b1.printinfo()
+class computer:
+
+    def __init__(self):
+
+        self.__maxprice=9600
+
+    def sell(self):
+
+        print("Selling Price :{}".format(self.__maxprice))
+
+    def setmaxprice(self,price):
+
+        self.__maxprice=price
+
+c=computer()
+
+c.sell()
+
+c.__maxprice=1200
+
+c.sell()
+
+c.setmaxprice(1200)
+
+c.sell()
